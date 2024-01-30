@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.phosphor-btn {
+    cursor: pointer;
+}
+body {
+    background-color: #554F64;
+    color: white;
+}
+
+.sidebar {
+    background-color: #2E2E2E;
+    height: 100vh;
+    position: absolute;
+    margin: 1rem 0rem 0rem 0rem;
+    border: 1px solid transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.sidebar:hover {
+    width: 300px;
+}
+.group:hover .group-hover\:display-block .list-items {
+    margin: 1rem;
+    display: block;
+}
+.list-items {
+    margin: 1rem;
+    display: none;
+}
+.item {
+    overflow: hidden;
+    color: white;
+    margin: 0.5rem;
+}
+.item:hover {
+    color: #E8E8E8;
+}
+.sidebar-items {
+    margin: 1rem;
+    display: block;
+    
+}
+.sidebar:hover ~ .item { 
+    display: block;
+}
+.structure {
+    display: flex;
+    justify-content: center;
+}
