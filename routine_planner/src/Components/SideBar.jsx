@@ -4,29 +4,29 @@ function SideBar() {
 
     return (
         <div>
-            <div  className='sidebar transition ease-in-out delay-150 hover:-translate-y-1 hover:duration-300 group'>
+            <div className='sidebar group '>
                 <div className="sidebar-items group-hover:display-block">
-                    <List color="#800000" size={32} className="phosphor-btn"/>
+                    <List color="#800000" size={32} className="phosphor-btn" />
                     <menu className="list-items">
-                       <div>
-                       <a className="item" href="/">
-                            Home
-                        </a>
-                       </div>
-                        <div>
-                        <a className="item" href="/">
-                            Gear Planner
-                        </a>
+                        <div className="mb-5">
+                            <a className="item sticky" href="/">
+                                Home
+                            </a>
                         </div>
-                        <div>   
-                        <a className="item" href="/">
-                            Adventurer's Guild
-                        </a>
+                        <div className="mb-5">
+                            <a className="item sticky" href="/">
+                                Gear Planner
+                            </a>
                         </div>
-                        <div>
-                        <a className="item" href="/">
-                            Character Customization
-                        </a>
+                        <div className="mb-5">
+                            <a className="item sticky" href="/">
+                                Adventurer's Guild
+                            </a>
+                        </div>
+                        <div className="mb-5">
+                            <a className="item sticky" href="/">
+                                Character Customization
+                            </a>
                         </div>
                     </menu>
                 </div>

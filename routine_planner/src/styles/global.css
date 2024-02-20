@@ -12,6 +12,7 @@ body {
 }
 
 .sidebar {
+    width: 75px;
     background-color: #2E2E2E;
     height: 100vh;
     position: absolute;
@@ -19,7 +20,9 @@ body {
     border: 1px solid transparent;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: width 0.3s ease;
     overflow: hidden;
+    white-space: nowrap;
 }
 .sidebar:hover {
     width: 300px;
@@ -30,6 +33,7 @@ body {
 }
 .list-items {
     margin: 1rem;
+    padding-bottom: 5rem;
     display: none;
 }
 .item {
@@ -51,4 +55,57 @@ body {
 .structure {
     display: flex;
     justify-content: center;
+}
+.card-container {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    background-color: #635c74;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+}
+.inside-card {
+    padding: 2rem;
+}
+.bar {
+    border: 2px solid #2E2E2E;
+}
+.bar-faded {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.midLine {
+    width: 15rem;
+    display: flex;
+    alignSelf: end;
+    justify-content: space-around;
+}
+.firstLine {
+    display: flex;
+    justify-content: center;
+}
+.midBtn {
+    display: none;
+}
+.dark-card {
+    padding: 0.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    width: max-content;
+    background-color: #3a495a;
+}
+.circle {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border: 1px solid #7c8085;
+    border-radius: 50%;
+}
+.cicle-item {
+    position: absolute;
+    background-color: rgba(32,34,37,.8);
+    border: 1px solid #7c8085;
+    border-radius: 
 }
